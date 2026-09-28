@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>西安交通大学 2026 届本科毕业论文 LaTeX 模板 | XJTU 毕设 LaTeX 模板下载</title>
+
+<meta name="description" content="西安交通大学（西交大）2026 届本科毕业设计（论文）LaTeX 模板，依据官方《本科毕业设计（论文）模版+(2025修订版)》逐项校对。XeLaTeX 编译，支持 Windows / macOS / Linux，含国标 gbt7714 参考文献样式。">
+<meta name="keywords" content="西安交通大学,西交大,XJTU,本科毕业论文,毕业设计,学位论文,LaTeX模板,latex模版,xelatex,gbt7714,2026届,论文模板,毕设模板,XJTU LaTeX template,beamer,参考文献">
+<meta name="author" content="wangqiaozhi">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://bbrroo321.github.io/XJTU_LaTeX_2026/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="XJTU_LaTeX_2026">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://bbrroo321.github.io/XJTU_LaTeX_2026/">
+<meta property="og:title" content="西安交通大学 2026 届本科毕业论文 LaTeX 模板">
+<meta property="og:description" content="西交大 2026 届本科毕业设计（论文）LaTeX 模板，依据官方 2025 修订版 Word 模板逐项校对，XeLaTeX 编译，含 gbt7714 国标参考文献样式。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="西安交通大学 2026 届本科毕业论文 LaTeX 模板">
+<meta name="twitter:description" content="西交大 2026 届本科毕业设计（论文）LaTeX 模板，XeLaTeX 编译，含 gbt7714 国标参考文献样式。">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f4c81'/><text y='72' x='50' font-size='58' text-anchor='middle' fill='white' font-family='serif'>T</text></svg>">
+
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1f26; --muted:#5b6673; --line:#e3e8ee;
+    --brand:#0f4c81; --brand-soft:#eef4fa; --code:#f5f7fa; --warn:#b45309; --warn-soft:#fff8ec;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#14181d; --fg:#e6eaee; --muted:#9aa6b2; --line:#2a3138;
+      --brand:#7db4e0; --brand-soft:#1b2531; --code:#1b2026; --warn:#e0a458; --warn-soft:#241d13;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px}
+  header{border-bottom:1px solid var(--line);background:var(--brand-soft)}
+  header .wrap{padding-top:44px;padding-bottom:36px}
+  h1{font-size:1.85rem;line-height:1.35;margin:0 0 10px;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:1rem;margin:0 0 22px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{
+    display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;
+    font-size:.94rem;font-weight:600;border:1px solid var(--brand);
+  }
+  .btn-primary{background:var(--brand);color:#fff}
+  .btn-ghost{color:var(--brand);background:transparent}
+  main .wrap{padding-top:38px;padding-bottom:56px}
+  h2{font-size:1.2rem;margin:38px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h2:first-child{margin-top:0}
+  h3{font-size:1rem;margin:22px 0 8px}
+  p{margin:0 0 14px}
+  ul,ol{padding-left:1.35em;margin:0 0 14px}
+  li{margin:5px 0}
+  code{background:var(--code);padding:.15em .42em;border-radius:4px;font-size:.9em;
+       font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:14px 16px;overflow-x:auto;margin:0 0 14px}
+  pre code{background:none;padding:0;font-size:.86em;line-height:1.6}
+  table{width:100%;border-collapse:collapse;margin:0 0 16px;font-size:.94rem}
+  th,td{border:1px solid var(--line);padding:8px 12px;text-align:left}
+  th{background:var(--code);font-weight:600}
+  a{color:var(--brand)}
+  .note{background:var(--warn-soft);border-left:3px solid var(--warn);padding:12px 16px;border-radius:0 6px 6px 0;margin:0 0 16px}
+  .note strong{color:var(--warn)}
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+  footer .wrap{padding-top:24px;padding-bottom:40px}
+  .kw{color:var(--muted);font-size:.82rem;line-height:1.9}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "西安交通大学 2026 届本科毕业论文 LaTeX 模板",
+  "alternateName": ["XJTU Bachelor's Degree Thesis LaTeX Template 2026", "XJTU_LaTeX_2026", "西交大毕设 LaTeX 模板"],
+  "description": "西安交通大学 2026 届本科毕业设计（论文）LaTeX 模板，依据官方《本科毕业设计（论文）模版+(2025修订版)》校对，使用 XeLaTeX 编译，含 gbt7714 国标参考文献样式。",
+  "codeRepository": "https://github.com/bbrroo321/XJTU_LaTeX_2026",
+  "url": "https://bbrroo321.github.io/XJTU_LaTeX_2026/",
+  "programmingLanguage": "TeX",
+  "runtimePlatform": "XeLaTeX",
+  "license": "https://opensource.org/licenses/MIT",
+  "inLanguage": "zh-CN",
+  "keywords": "西安交通大学,西交大,XJTU,本科毕业论文,毕业设计,LaTeX模板,latex模版,xelatex,gbt7714,2026届",
+  "author": { "@type": "Person", "name": "wangqiaozhi", "email": "wangqiaozhi@stu.xjtu.edu.cn" },
+  "isBasedOn": "https://github.com/ChenjieGump/XJTU-BSThesis_latex_2022"
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>西安交通大学 2026 届本科毕业论文 LaTeX 模板</h1>
+    <p class="sub">
+      XJTU Bachelor's Degree Thesis LaTeX Template (2026)<br>
+      西交大本科毕业设计（论文）排版模板 · 依据官方《本科毕业设计（论文）模版 + (2025 修订版）》校对
+    </p>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://github.com/bbrroo321/XJTU_LaTeX_2026">在 GitHub 上查看</a>
+      <a class="btn btn-ghost" href="https://github.com/bbrroo321/XJTU_LaTeX_2026/archive/refs/heads/main.zip">下载 ZIP</a>
+      <a class="btn btn-ghost" href="XJTU-BSThesis_latex_2026/xjtuBS.tex">查看主文件</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <h2>简介</h2>
+  <p>
+    本模板面向 <strong>西安交通大学 2026 届本科毕业设计（论文）</strong>，提供一个可以直接使用的 LaTeX 排版方案，
+    用于替代 WPS / Word 繁琐的格式调整流程。
+  </p>
+  <p>
+    标准参考为西安交通大学提供的 Word 模板《本科毕业设计（论文）模版 + (2025 修订版)》。
+    <strong>2026 届的毕设格式要求仍与 2025 年一致。</strong>
+  </p>
+  <div class="note">
+    <strong>免责声明：</strong>本模板仅作参考，作者对使用本模板可能产生的任何格式错误不负责任。
+    在使用本文件之前，请务必检查你的论文格式要求。
+  </div>
+  <p><strong>测试环境：</strong>TeX Live 2026-03-01、Windows 11 23H2。未在 Linux、macOS 上测试。</p>
+
+  <h2>快速开始</h2>
+  <ol>
+    <li>打开 <code>XJTU-BSThesis_latex_2026/xjtuBS.tex</code>。</li>
+    <li>
+      <strong>编译前请仔细阅读文件开头的使用说明</strong>，并根据系统修改 <code>\documentclass</code> 选项：
+      <table>
+        <tr><th>系统</th><th>写法</th></tr>
+        <tr><td>Windows</td><td><code>\documentclass[Win]{xjtuBSThesis}</code></td></tr>
+        <tr><td>macOS</td><td><code>\documentclass[Mac]{xjtuBSThesis}</code></td></tr>
+        <tr><td>Linux</td><td><code>\documentclass[Linux]{xjtuBSThesis}</code></td></tr>
+      </table>
+    </li>
+    <li>使用 <strong>XeLaTeX</strong> 编译。</li>
+    <li>参考文献按 <code>sample.bib</code> 的写法填写。</li>
+    <li><code>xjtuBS.tex</code> 的第二个 section 给出了常用功能的用法示范，可直接照抄。</li>
+  </ol>
+  <p>导入「任务书」「考核评议书」「答辩结果」：使用系统下载的 Word 文件制作 PDF 后导入即可。</p>
+
+  <h2>目录结构</h2>
+  <pre><code>.
+├── XJTU-BSThesis_latex_2026/
+│   ├── xjtuBS.tex              # 主文件，从这里开始
+│   ├── xjtuBSThesis.cls        # 文档类（格式定义）
+│   ├── sample.bib              # 参考文献示例
+│   ├── gbt7714-numerical.bst   # 国标参考文献样式
+│   └── figure/                 # 校徽等图片资源
+├── Counting_Chinese/           # 中文字符统计脚本
+└── 2025年本科毕业设计模版/      # 官方 Word 模板（格式参考基准）</code></pre>
+
+  <h2>相较 2022 版的修改</h2>
+  <p>
+    本模板主体来自 <a href="https://github.com/ChenjieGump/XJTU-BSThesis_latex_2022">ChenjieGump/XJTU-BSThesis_latex_2022</a>
+    （作者：干晨劼）。本项目作者根据《本科毕业设计（论文）模版 + (2025 修订版)》的要求进行了详细修改：
+  </p>
+  <ol>
+    <li>调整了目录中「摘要」「致谢」「附录」字段的样式</li>
+    <li>调整了行距与各级标题段落前后间隔</li>
+    <li>修复了表格宽度与正文版面不平齐的问题</li>
+    <li>调整了参考文献编码制</li>
+    <li>调整了参考文献表的排版、字号等</li>
+    <li>调整了页眉中部分字段的样式</li>
+    <li>调整了正文距离页眉的距离</li>
+    <li>调整了奇偶页排版的规则，使得绪论之后的正文章节从新一页而非新的奇数页开始</li>
+    <li>添加了导入「任务书」「考核评议书」「答辩结果」的方法</li>
+    <li>修复了公式中加粗字体显示错误的问题</li>
+  </ol>
+
+  <h2>已知问题</h2>
+  <ol>
+    <li>主要符号表（denotation）无法使用</li>
+    <li>行距与各级标题段落前后间隔可能有问题，请认真对照模板检查</li>
+    <li>附录目前只支持纯文本</li>
+  </ol>
+
+  <h2>中文字数统计工具</h2>
+  <p>
+    <code>Counting_Chinese</code> 文件夹用于统计中文字符，<strong>目前只支持 macOS 和 Linux</strong>。
+    请先用记事本打开，里面有说明使用方法。
+  </p>
+  <div class="note"><strong>注意：</strong>不要修改该文件夹的名称！</div>
+
+  <h2>致谢与来源</h2>
+  <table>
+    <tr><th>版本</th><th>作者</th><th>来源</th></tr>
+    <tr><td>2022 版</td><td>Chenjie Gan（干晨劼）</td><td><a href="https://github.com/ChenjieGump/XJTU-BSThesis_latex_2022">XJTU-BSThesis_latex_2022</a></td></tr>
+    <tr><td>2016 版</td><td>Lingxiao Zhao（赵令霄）</td><td><a href="https://github.com/LingxiaoShawn/XJTU_LaTeX">XJTU_LaTeX</a></td></tr>
+    <tr><td>更早</td><td>XJTU CTex Model（2011）</td><td>wanghongxin 等</td></tr>
+    <tr><td>更早</td><td>NJU LaTeX Model</td><td>张楚珩</td></tr>
+  </table>
+  <p>另外感谢 Hu Haixing 提供的南京大学硕博学位论文模板。</p>
+
+  <h2>联系方式</h2>
+  <table>
+    <tr><th>版本</th><th>作者</th><th>邮箱</th></tr>
+    <tr><td>2026 版</td><td>wangqiaozhi</td><td>wangqiaozhi@stu.xjtu.edu.cn</td></tr>
+    <tr><td>2022 版</td><td>ChenjieGump</td><td>ganchenjie@stu.xjtu.edu.cn</td></tr>
+    <tr><td>2016 版</td><td>Lingxiao</td><td>lingxiao@cmu.edu</td></tr>
+  </table>
+  <p>如遇问题欢迎提 <a href="https://github.com/bbrroo321/XJTU_LaTeX_2026/issues">Issue</a>。</p>
+
+  <h2>许可协议</h2>
+  <p><a href="https://github.com/bbrroo321/XJTU_LaTeX_2026/blob/main/LICENSE">MIT License</a> © 2026 bbrroo321</p>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>XJTU Bachelor's Degree Thesis LaTeX Template (2026)</strong> — A LaTeX template for the bachelor's degree thesis of Xi'an Jiaotong University (XJTU), class of 2026. Compile with XeLaTeX. Based on XJTU-BSThesis_latex_2022 by Chenjie Gan. Licensed under the MIT License.</p>
+    <p class="kw">西安交通大学 · 西交大 · XJTU · 本科毕业论文 · 毕业设计 · 学位论文 · LaTeX 模板 · latex 模版 · xelatex · gbt7714 · 2026 届 · 论文排版 · thesis template · bachelor thesis</p>
+  </div>
+</footer>
+
+</body>
+</html>
